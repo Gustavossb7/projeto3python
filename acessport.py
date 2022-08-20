@@ -200,7 +200,7 @@ while laco == True:
         print('Por favor verifique a credencial de autentificação de triplo fator.')
         print('')
         print('')
-        autenticacao = leiaAutenticacao('Digite sua autenticação: ')
+        leiaAutenticacao('Digite sua autenticação: ')
 
         print('')
         print('Etapa de verificação credencial de autenticação concluida com sucesso.')
@@ -330,6 +330,7 @@ while laco == True:
 
             # cotação
             if opcao == 2:
+                laco2=True
                 while   laco2 == True:
                     conectadoInternet1 = conectadoInternet()
                     if conectadoInternet1 == False:
