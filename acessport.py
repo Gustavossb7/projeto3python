@@ -57,7 +57,7 @@ def leiaOpcao(msg):
     ok = False
     while True:
         opcao = int(input(msg))
-        if opcao == 1 or opcao == 2 or opcao == 3 or opcao == 4 or opcao == 5 or opcao == 6:
+        if opcao == 1 or opcao == 2 or opcao == 3 or opcao == 4 or opcao == 5:
             ok = True
         else:
             print('ERRO! Digite uma opção válida')
@@ -198,8 +198,15 @@ print('')
 print('Access Matheus')
 print('')
 senha = leiaSenha('Digite sua senha: ')
+time.sleep(1.1)
 print('')
-print('Etapa de verificação credencial de segurança concluida com sucesso.')
+print('Credencial verificada com sucesso.')
+time.sleep(0.8)
+print('')
+print('')
+print('')
+print('Estabelecendo conexão com o servidor.')
+time.sleep(4.1)
 print('')
 
 while laco == True:
@@ -214,13 +221,13 @@ while laco == True:
         laco = False
         print('')
         print('')
-        print('Por favor verifique a credencial de autentificação de triplo fator.')
+        print('Por favor autentique o canal.')
+        time.sleep(1.1)
         print('')
         print('')
         autenticacao = leiaAutenticacao('Digite sua autenticação: ')
-
         print('')
-        print('Etapa de verificação credencial de autenticação concluida com sucesso.')
+        print('Etapa de verificação credencial e autenticação concluida com sucesso.')
         print('')
         print('')
         print("Acess",socket.gethostname(),"   ", datetime.now(), "imported")
@@ -346,7 +353,7 @@ while laco == True:
                         time.sleep(3)
                         print(' ')
                         print(' ')
-                        print('A rede não possui segurança a nível de criptografia de ponta a ponta. ')
+                        # print('A rede não possui segurança a nível de criptografia de ponta a ponta. ')
                         print(' ')
 
                         criptografar = leiaCriptografia(
@@ -355,6 +362,7 @@ while laco == True:
                         if criptografar == 'sim'.upper().lower():
                             print('')
                             print(' ')
+                            time.sleep(2.4)
                             print('''
                                                 JDxK4ZlvptmPYmK3LmYd3QoSFXpHI4FBYOQJ2GBG7LrBz4lOODYq291W7lSnraA-dXOO
                                                 u1JjP8Lsusb5jP6NyYkUFDlCBCs4Rixcx2IKhOB88opiTEBQHyTfNf2XDjDORLlaFjOlLaxr2nxnQ
@@ -370,89 +378,89 @@ while laco == True:
                             print('')
                             print("Não foi possível fazer o login")
 
-            # cotação
-            if opcao == 2:
-                laco2 = True
-                while laco2 == True:
-                    conectadoInternet1 = conectadoInternet()
-                    if conectadoInternet1 == False:
-                        print('')
-                        print('Por favor, verifique sua conexão com a internet')
-                        print('')
-                        numeroconexao = int(input("Quando estiver conectado digite 1: "))
-
-
-                    else:
-                        laco2 = False
-                        options = webdriver.ChromeOptions()
-                        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-                        navegador = webdriver.Chrome(options=options)
-
-                        print("")
-                        print("")
-
-                        navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
-                        time.sleep(4)
-                        print("")
-                        print("")
-                        print("")
-                        print("A aplicação está consultando as cotações atuais...")
-                        print("")
-                        options = webdriver.ChromeOptions()
-                        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-
-                        print("")
-                        navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
-
-                        print("")
-                        print("")
-                        cotacaoUSDT = navegador.find_element("xpath",
-                                                             '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
-                        precoUSDT = navegador.find_element("xpath",
-                                                           '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
-                        marketcapUSDT = navegador.find_element("xpath",
-                                                               '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
-                        fullydilutedmarketcapUSDT = navegador.find_element("xpath",
-                                                                           '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
-                        volume24hUSDT = navegador.find_element("xpath",
-                                                               '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
-                        print(precoUSDT.text)
-                        print(cotacaoUSDT.text)
-                        print("")
-                        print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
-                        print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ', volume24hUSDT.text)
-                        print("")
-                        print("")
-                        print("")
-
-                        print('------------------------------')
-                        print("")
-                        print("")
-
-                        navegador.get("https://coinmarketcap.com/pt-br/currencies/pax-gold/")
-                        cotacaoPAXG = navegador.find_element("xpath",
-                                                             '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
-                        precoPAXG = navegador.find_element("xpath",
-                                                           '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
-                        marketcapPAXG = navegador.find_element("xpath",
-                                                               '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
-                        fullydilutedmarketcapPAXG = navegador.find_element("xpath",
-                                                                           '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
-                        volume24hPAXG = navegador.find_element("xpath",
-                                                               '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
-
-                        print('Preço de PAX Gold (PAXG)')
-                        print(cotacaoPAXG.text)
-                        print("")
-                        print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
-                        print(marketcapPAXG.text, '     ', fullydilutedmarketcapPAXG.text, '            ',
-                              volume24hPAXG.text)
-                        print("")
-                        print("")
-                        print("")
+            # # cotação
+            # if opcao == 2:
+            #     laco2 = True
+            #     while laco2 == True:
+            #         conectadoInternet1 = conectadoInternet()
+            #         if conectadoInternet1 == False:
+            #             print('')
+            #             print('Por favor, verifique sua conexão com a internet')
+            #             print('')
+            #             numeroconexao = int(input("Quando estiver conectado digite 1: "))
+            #
+            #
+            #         else:
+            #             laco2 = False
+            #             options = webdriver.ChromeOptions()
+            #             options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            #             navegador = webdriver.Chrome(options=options)
+            #
+            #             print("")
+            #             print("")
+            #
+            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
+            #             time.sleep(4)
+            #             print("")
+            #             print("")
+            #             print("")
+            #             print("A aplicação está consultando as cotações atuais...")
+            #             print("")
+            #             options = webdriver.ChromeOptions()
+            #             options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            #
+            #             print("")
+            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
+            #
+            #             print("")
+            #             print("")
+            #             cotacaoUSDT = navegador.find_element("xpath",
+            #                                                  '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
+            #             precoUSDT = navegador.find_element("xpath",
+            #                                                '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
+            #             marketcapUSDT = navegador.find_element("xpath",
+            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
+            #             fullydilutedmarketcapUSDT = navegador.find_element("xpath",
+            #                                                                '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
+            #             volume24hUSDT = navegador.find_element("xpath",
+            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
+            #             print(precoUSDT.text)
+            #             print(cotacaoUSDT.text)
+            #             print("")
+            #             print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
+            #             print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ', volume24hUSDT.text)
+            #             print("")
+            #             print("")
+            #             print("")
+            #
+            #             print('------------------------------')
+            #             print("")
+            #             print("")
+            #
+            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/pax-gold/")
+            #             cotacaoPAXG = navegador.find_element("xpath",
+            #                                                  '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
+            #             precoPAXG = navegador.find_element("xpath",
+            #                                                '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
+            #             marketcapPAXG = navegador.find_element("xpath",
+            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
+            #             fullydilutedmarketcapPAXG = navegador.find_element("xpath",
+            #                                                                '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
+            #             volume24hPAXG = navegador.find_element("xpath",
+            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
+            #
+            #             print('Preço de PAX Gold (PAXG)')
+            #             print(cotacaoPAXG.text)
+            #             print("")
+            #             print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
+            #             print(marketcapPAXG.text, '     ', fullydilutedmarketcapPAXG.text, '            ',
+            #                   volume24hPAXG.text)
+            #             print("")
+            #             print("")
+            #             print("")
 
             # carteiras
-            if opcao == 3:
+            if opcao == 2:
                 print('''	Carteiras dísponíveis:
                     Carteira R1
                     Carteira R2
@@ -462,6 +470,7 @@ while laco == True:
                     Carteira FTX''')
                 print(' ')
                 opcao1 = leiaCriptografia('Deseja inspecionar o circuito interno? ')
+                time.sleep(1.5)
                 if opcao1 == 'não'.upper().lower() or opcao1 == 'nao'.upper().lower():
                     print('')
                 if opcao1 == 'sim'.upper().lower():
@@ -4168,6 +4177,7 @@ while laco == True:
                             print('')
                         print(' ')
                         opcao1 = leiaCriptografia('Deseja inspecionar o circuito interno? ')
+                        time.sleep(1.5)
                         if opcao1 == 'não'.upper().lower() or opcao1 == 'nao'.upper().lower():
                             print('')
                         if opcao1 == 'sim'.upper().lower():
@@ -7669,7 +7679,7 @@ while laco == True:
                                     print('Processo Finalizado')
 
             # informações criptografia
-            if opcao == 4:
+            if opcao == 3:
                 print("")
                 print("Informações de criptografia: ")
                 print("")
@@ -7698,7 +7708,7 @@ while laco == True:
                 print("")
 
             # informações protocolo de segurança
-            if opcao == 5:
+            if opcao == 4:
                 print("")
                 print("Informações Protodolo de segurança: ")
                 print("")
@@ -7728,7 +7738,7 @@ while laco == True:
                 print("")
 
             # Log out
-            if opcao == 6:
+            if opcao == 5:
                 time.sleep(2)
                 print("Desconectando da rede...")
                 time.sleep(4)
