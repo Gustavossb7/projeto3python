@@ -12,6 +12,7 @@ import subprocess
 import socket
 from datetime import datetime
 import requests
+import os
 
 moeda = 'USDT'
 moeda2 = 'PAXG'
@@ -377,87 +378,6 @@ while laco == True:
                         if criptografar == 'nao'.upper().lower():
                             print('')
                             print("Não foi possível fazer o login")
-
-            # # cotação
-            # if opcao == 2:
-            #     laco2 = True
-            #     while laco2 == True:
-            #         conectadoInternet1 = conectadoInternet()
-            #         if conectadoInternet1 == False:
-            #             print('')
-            #             print('Por favor, verifique sua conexão com a internet')
-            #             print('')
-            #             numeroconexao = int(input("Quando estiver conectado digite 1: "))
-            #
-            #
-            #         else:
-            #             laco2 = False
-            #             options = webdriver.ChromeOptions()
-            #             options.add_experimental_option('excludeSwitches', ['enable-logging'])
-            #             navegador = webdriver.Chrome(options=options)
-            #
-            #             print("")
-            #             print("")
-            #
-            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
-            #             time.sleep(4)
-            #             print("")
-            #             print("")
-            #             print("")
-            #             print("A aplicação está consultando as cotações atuais...")
-            #             print("")
-            #             options = webdriver.ChromeOptions()
-            #             options.add_experimental_option('excludeSwitches', ['enable-logging'])
-            #
-            #             print("")
-            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/tether/")
-            #
-            #             print("")
-            #             print("")
-            #             cotacaoUSDT = navegador.find_element("xpath",
-            #                                                  '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
-            #             precoUSDT = navegador.find_element("xpath",
-            #                                                '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
-            #             marketcapUSDT = navegador.find_element("xpath",
-            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
-            #             fullydilutedmarketcapUSDT = navegador.find_element("xpath",
-            #                                                                '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
-            #             volume24hUSDT = navegador.find_element("xpath",
-            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
-            #             print(precoUSDT.text)
-            #             print(cotacaoUSDT.text)
-            #             print("")
-            #             print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
-            #             print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ', volume24hUSDT.text)
-            #             print("")
-            #             print("")
-            #             print("")
-            #
-            #             print('------------------------------')
-            #             print("")
-            #             print("")
-            #
-            #             navegador.get("https://coinmarketcap.com/pt-br/currencies/pax-gold/")
-            #             cotacaoPAXG = navegador.find_element("xpath",
-            #                                                  '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div[1]/div/span')
-            #             precoPAXG = navegador.find_element("xpath",
-            #                                                '// *[ @ id = "__next"] / div / div[1] / div[2] / div / div[1] / div[2] / div / div[2] / h1')
-            #             marketcapPAXG = navegador.find_element("xpath",
-            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]/div')
-            #             fullydilutedmarketcapPAXG = navegador.find_element("xpath",
-            #                                                                '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[2]/div/div[2]/div')
-            #             volume24hPAXG = navegador.find_element("xpath",
-            #                                                    '//*[@id="__next"]/div/div[1]/div[2]/div/div[1]/div[2]/div/div[3]/div[1]/div[3]/div[1]/div[2]/div')
-            #
-            #             print('Preço de PAX Gold (PAXG)')
-            #             print(cotacaoPAXG.text)
-            #             print("")
-            #             print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
-            #             print(marketcapPAXG.text, '     ', fullydilutedmarketcapPAXG.text, '            ',
-            #                   volume24hPAXG.text)
-            #             print("")
-            #             print("")
-            #             print("")
 
             # carteiras
             if opcao == 2:
@@ -7763,4 +7683,9 @@ while laco == True:
                 time.sleep(1.5)
                 print('')
                 print("Log out feito com sucesso.")
-                break
+
+                shutdown = input("Deseja desligar o computador? ")
+                if shutdown == 'sim':
+                    os.system("shutdown /s /t 1")
+                else:
+                    print('')
