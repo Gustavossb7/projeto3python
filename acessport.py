@@ -397,6 +397,7 @@ while True:
 
                             print('')
                             ncarteira = leiaNcarteira('Digite o número da carteira: ')
+                            time.sleep(1.4)
                             print('')
 
                             total = float(15_896_777.39)
@@ -540,6 +541,7 @@ while True:
                                     cotacaoUSDTbinance = float(cotacaoUSDTbinance)
                                     cotacaoUSDTbinance = round(cotacaoUSDTbinance, 5)
 
+
                                     simbolo2 = moeda2 + moeda
 
                                     url2 = f"https://api.binance.com/api/v3/ticker/price?symbol={simbolo2}"
@@ -574,6 +576,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -1145,6 +1148,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -1705,6 +1709,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -2263,6 +2268,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -2810,6 +2816,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -2840,10 +2847,10 @@ while True:
                                         if confirmar == 'sim'.upper().lower().strip():
                                             saldo5 = saldo5 - valor
                                             if destino == 1:
-                                                saldo5 = saldo5 + (valor * 1794) - taxaPaxg2
-                                                real5 = (saldo5 * 5.07)
-                                                saldo5 = round(saldo5, 5)
-                                                al5 = round((100 * real5) / total, 3)
+                                                saldo1 = saldo1 + (valor * 1794) - taxaUsdt2
+                                                real1 = (saldo1 * 5.07)
+                                                saldo1 = round(saldo1, 5)
+                                                al1 = round((100 * real1) / total, 3)
                                                 for c in range(1, 20):
                                                     cont = 0
                                                     while cont < 1:
@@ -2868,9 +2875,9 @@ while True:
 
                                                         cont = cont + 1
                                             if destino == 2:
-                                                saldo6 = saldo6 + (valor * 1794) - taxaPaxg2
-                                                real6 = (saldo6 * 5.07)
-                                                saldo6 = round(saldo6, 5)
+                                                saldo2 = saldo2 + (valor * 1794) - taxaUsdt2
+                                                real2 = (saldo2 * 5.07)
+                                                saldo2 = round(saldo2, 3)
                                                 al6 = round((100 * real6) / total, 3)
                                                 for c in range(1, 20):
                                                     cont1 = 0
@@ -2896,7 +2903,7 @@ while True:
 
                                                         cont1 = cont1 + 1
                                             if destino == 3:
-                                                saldo3 = saldo3 + valor - taxaUsdt
+                                                saldo3 = saldo3 + valor - taxaUsdt2
                                                 real3 = float(saldo3 * 9097.38)
                                                 al3 = round((100 * real3) / total, 3)
                                                 for c in range(1, 60):
@@ -2904,7 +2911,7 @@ while True:
                                                           ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                     time.sleep(1.5)
                                             if destino == 4:
-                                                saldo4 = saldo4 + valor - taxaUsdt
+                                                saldo4 = saldo4 + valor - taxaUsdt2
                                                 real4 = float(saldo4 * 9097.38)
                                                 al4 = round((100 * real4) / total, 3)
                                                 for c in range(1, 60):
@@ -3380,6 +3387,7 @@ while True:
                                     valor = float(input('Quantifique a tranferencia: '))
                                     print('')
                                     destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                    time.sleep(1.4)
                                     # taxa = random.choice(
                                     # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                     # 	 0.001904,
@@ -3411,10 +3419,10 @@ while True:
                                         if confirmar == 'sim'.upper().lower().strip():
                                             saldo6 = saldo6 - valor
                                             if destino == 1:
-                                                saldo5 = saldo5 + (valor * 1794) - taxaPaxg2
-                                                real5 = (saldo5 * 5.07)
-                                                saldo5 = round(saldo5, 5)
-                                                al5 = round((100 * real5) / total, 3)
+                                                saldo1 = saldo1 + (valor * 1794) - taxaUsdt2
+                                                real1 = (saldo1 * 5.07)
+                                                saldo1 = round(saldo1, 5)
+                                                al1 = round((100 * real1) / total, 3)
                                                 for c in range(1, 20):
                                                     cont = 0
                                                     while cont < 1:
@@ -3439,10 +3447,10 @@ while True:
 
                                                         cont = cont + 1
                                             if destino == 2:
-                                                saldo6 = saldo6 + (valor * 1794) - taxaPaxg2
-                                                real6 = (saldo6 * 5.07)
-                                                saldo6 = round(saldo6, 5)
-                                                al6 = round((100 * real6) / total, 3)
+                                                saldo2 = saldo2 + (valor * 1794) - taxaUsdt2
+                                                real2 = (saldo2 * 5.07)
+                                                saldo2 = round(saldo2, 5)
+                                                al2 = round((100 * real2) / total, 3)
                                                 for c in range(1, 20):
                                                     cont1 = 0
                                                     while cont1 < 1:
@@ -3467,7 +3475,7 @@ while True:
 
                                                         cont1 = cont1 + 1
                                             if destino == 3:
-                                                saldo3 = saldo3 + valor - taxaUsdt
+                                                saldo3 = saldo3 + valor - taxaUsdt2
                                                 real3 = float(saldo3 * 9097.38)
                                                 al3 = round((100 * real3) / total, 3)
                                                 for c in range(1, 60):
@@ -4103,6 +4111,7 @@ while True:
                                 if opcao1 == 'sim'.upper().lower():
                                     print('')
                                     ncarteira = leiaNcarteira('Digite o número da carteira: ')
+                                    time.sleep(1.4)
                                     print('')
                                     if ncarteira == 1:
                                         print(
@@ -4232,8 +4241,8 @@ while True:
                                             print('')
                                             valor = float(input('Quantifique a tranferencia: '))
                                             print('')
-                                            destino = leiaNcarteira(
-                                                'Qual a carteira de destino? (digite o número da carteira): ')
+                                            destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
@@ -4825,6 +4834,7 @@ while True:
                                             print('')
                                             destino = leiaNcarteira(
                                                 'Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
@@ -5405,6 +5415,7 @@ while True:
                                             print('')
                                             destino = leiaNcarteira(
                                                 'Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
@@ -5977,6 +5988,7 @@ while True:
                                             print('')
                                             destino = leiaNcarteira(
                                                 'Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
@@ -6542,6 +6554,7 @@ while True:
                                             print('')
                                             destino = leiaNcarteira(
                                                 'Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
@@ -7134,6 +7147,7 @@ while True:
                                             print('')
                                             destino = leiaNcarteira(
                                                 'Qual a carteira de destino? (digite o número da carteira): ')
+                                            time.sleep(1.4)
                                             # taxa = random.choice(
                                             # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
                                             # 	 0.001904,
