@@ -194,6 +194,12 @@ def conectadoInternet():
 
     return False
 
+totalUSDT1 = 0
+totalUSDT2 = 0
+totalUSDT3 = 0
+totalUSDT4 = 0
+totalPAXG5 = 0
+totalPAXG6 = 0
 
 laco = True
 laco1 = True
@@ -452,12 +458,17 @@ while laco2 == True:
                 al6 = round((100 * real6) / total, 3)
 
                 if ncarteira == 1:
+                    #saldo1 = round(saldo1, 3)
                     print(
                         'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                             saldo1, al1))
                     print('')
                     print('')
+                    if totalUSDT1 != 0:
+                        print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT1))
                     print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -1033,9 +1044,17 @@ while laco2 == True:
                         print('Processo Finalizado')
 
                 if ncarteira == 2:
+                    #saldo2 = round(saldo2, 5)
                     print(
                         'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                             saldo2, al2))
+                    print('')
+                    print('')
+                    if totalUSDT2 != 0:
+                        print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT2))
+                    print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -1603,9 +1622,17 @@ while laco2 == True:
                         print('Processo Finalizado')
 
                 if ncarteira == 3:
+                    #saldo3 = round(saldo3, 5)
                     print(
                         'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                             saldo3, al3))
+                    print('')
+                    print('')
+                    if totalUSDT3 != 0:
+                        print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT3))
+                    print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -2171,9 +2198,17 @@ while laco2 == True:
                         print('Processo Finalizado')
 
                 if ncarteira == 4:
+                    #saldo4 = round(saldo4, 5)
                     print(
                         'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                             saldo4, al4))
+                    print('')
+                    print('')
+                    if totalUSDT4 != 0:
+                        print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT4))
+                    print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -2736,9 +2771,17 @@ while laco2 == True:
                         print('Processo Finalizado')
 
                 if ncarteira == 5:
+                    saldo5 = round(saldo5, 5)
                     print(
                         'Criptomoeda: Theter (USDT), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%'.format(
                             saldo5, al5))
+                    print('')
+                    print('')
+                    if totalPAXG5 != 0:
+                        print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(totalPAXG5))
+                    print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -3313,9 +3356,17 @@ while laco2 == True:
                         print('Processo Finalizado')
 
                 if ncarteira == 6:
+                    saldo6 = round(saldo6, 5)
                     print(
                         'Criptomoeda: Theter (USDT), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%'.format(
                             saldo6, al6))
+                    print('')
+                    print('')
+                    if totalPAXG6 != 0:
+                        print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(totalPAXG6))
+                    print('')
+                    print('')
+                    time.sleep(2)
                     desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                     if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                         print('')
@@ -4198,12 +4249,17 @@ while laco2 == True:
                         time.sleep(1.4)
                         print('')
                         if ncarteira == 1:
+                            # saldo1 = round(saldo1, 3)
                             print(
                                 'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                                     saldo1, al1))
                             print('')
                             print('')
+                            if totalUSDT1 != 0:
+                                print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT1))
                             print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -4274,8 +4330,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -4301,8 +4356,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -4315,8 +4369,7 @@ while laco2 == True:
                                 print('Carteira R1                      Tipo: Reserva')
                                 time.sleep(0.5)
                                 print('')
-                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(
-                                    saldo1, al1))
+                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(saldo1, al1))
                                 print('                                           R${}'.format(
                                     round(cotacaoPAXGbinance * saldo1, 2)))
                                 time.sleep(0.8)
@@ -4333,8 +4386,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -4343,25 +4395,19 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2=taxa*10
                                 taxaPaxg = random.choice(
-                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845,
-                                     0.000451243811,
-                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272,
-                                     0.007470163288])
+                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845, 0.000451243811,
+                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272, 0.007470163288])
 
                                 taxaPaxg2 = random.choice(
-                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641,
-                                     0.026274362743,
-                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062,
-                                     0.037388547043])
+                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641, 0.026274362743,
+                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062, 0.037388547043])
 
                                 taxaUsdt = random.choice(
-                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988,
-                                     1.39284, 8.85470,
+                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988, 1.39284, 8.85470,
                                      13.39448])
 
                                 taxaUsdt2 = random.choice(
-                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639,
-                                     27.45124,
+                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639, 27.45124,
                                      49.73885,
                                      67.16942])
                                 print('')
@@ -4371,8 +4417,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8,
                                                                                la2, la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -4415,21 +4461,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -4451,21 +4489,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -4564,41 +4594,35 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
 
                                 else:
                                     print(
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -4640,21 +4664,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -4676,21 +4692,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -4800,42 +4808,44 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
 
 
                             else:
                                 print('Processo Finalizado')
 
                         if ncarteira == 2:
+                            # saldo2 = round(saldo2, 5)
                             print(
                                 'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                                     saldo2, al2))
+                            print('')
+                            print('')
+                            if totalUSDT2 != 0:
+                                print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT2))
+                            print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -4906,8 +4916,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -4933,8 +4942,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -4947,8 +4955,7 @@ while laco2 == True:
                                 print('Carteira R2                      Tipo: Reserva')
                                 time.sleep(0.5)
                                 print('')
-                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(
-                                    saldo2, al2))
+                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(saldo2, al2))
                                 print('                                           R${}'.format(
                                     round(cotacaoPAXGbinance * saldo2, 2)))
                                 time.sleep(0.8)
@@ -4968,8 +4975,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -4978,25 +4984,19 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2 = taxa * 10
                                 taxaPaxg = random.choice(
-                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845,
-                                     0.000451243811,
-                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272,
-                                     0.007470163288])
+                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845, 0.000451243811,
+                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272, 0.007470163288])
 
                                 taxaPaxg2 = random.choice(
-                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641,
-                                     0.026274362743,
-                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062,
-                                     0.037388547043])
+                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641, 0.026274362743,
+                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062, 0.037388547043])
 
                                 taxaUsdt = random.choice(
-                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988,
-                                     1.39284, 8.85470,
+                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988, 1.39284, 8.85470,
                                      13.39448])
 
                                 taxaUsdt2 = random.choice(
-                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639,
-                                     27.45124,
+                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639, 27.45124,
                                      49.73885,
                                      67.16942])
                                 print('')
@@ -5006,8 +5006,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8,
                                                                                la2, la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -5049,21 +5049,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -5085,21 +5077,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -5199,41 +5183,35 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
 
                                 else:
                                     print(
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -5275,21 +5253,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -5311,21 +5281,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -5425,41 +5387,43 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
 
                             else:
                                 print('Processo Finalizado')
 
                         if ncarteira == 3:
+                            # saldo3 = round(saldo3, 5)
                             print(
                                 'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                                     saldo3, al3))
+                            print('')
+                            print('')
+                            if totalUSDT3 != 0:
+                                print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT3))
+                            print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -5530,8 +5494,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -5557,8 +5520,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -5571,8 +5533,7 @@ while laco2 == True:
                                 print('Carteira R3                      Tipo: Reserva')
                                 time.sleep(0.5)
                                 print('')
-                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(
-                                    saldo3, al3))
+                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(saldo3, al3))
                                 print('                                           R${}'.format(
                                     round(cotacaoPAXGbinance * saldo3, 2)))
                                 time.sleep(0.8)
@@ -5592,8 +5553,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -5602,25 +5562,19 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2 = taxa * 10
                                 taxaPaxg = random.choice(
-                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845,
-                                     0.000451243811,
-                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272,
-                                     0.007470163288])
+                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845, 0.000451243811,
+                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272, 0.007470163288])
 
                                 taxaPaxg2 = random.choice(
-                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641,
-                                     0.026274362743,
-                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062,
-                                     0.037388547043])
+                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641, 0.026274362743,
+                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062, 0.037388547043])
 
                                 taxaUsdt = random.choice(
-                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988,
-                                     1.39284, 8.85470,
+                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988, 1.39284, 8.85470,
                                      13.39448])
 
                                 taxaUsdt2 = random.choice(
-                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639,
-                                     27.45124,
+                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639, 27.45124,
                                      49.73885,
                                      67.16942])
                                 print('')
@@ -5630,8 +5584,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8,
                                                                                la2, la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -5673,21 +5627,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -5709,21 +5655,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -5823,40 +5761,34 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                 else:
                                     print(
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -5898,21 +5830,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -5934,21 +5858,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -6048,40 +5964,42 @@ while laco2 == True:
                                     if destino == 1:
                                         print(
                                             'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                     if destino == 2:
                                         print(
                                             'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                     if destino == 3:
                                         print(
                                             'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                     if destino == 4:
                                         print(
                                             'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                     if destino == 5:
                                         print(
                                             'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                     if destino == 6:
                                         print(
                                             'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8,
-                                                la2, la3))
+                                                saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                             else:
                                 print('Processo Finalizado')
 
                         if ncarteira == 4:
+                            # saldo4 = round(saldo4, 5)
                             print(
                                 'Criptomoeda: Paxos Gold (PAXG), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%'.format(
                                     saldo4, al4))
+                            print('')
+                            print('')
+                            if totalUSDT4 != 0:
+                                print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(totalUSDT4))
+                            print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -6152,8 +6070,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -6179,8 +6096,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -6193,8 +6109,7 @@ while laco2 == True:
                                 print('Carteira R4                      Tipo: Reserva')
                                 time.sleep(0.5)
                                 print('')
-                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(
-                                    saldo4, al4))
+                                print('Criptomoeda: Paxos Gold (PAXG)   Quantidade: {}    AL: {}% '.format(saldo4, al4))
                                 print('                                           R${}'.format(
                                     round(cotacaoPAXGbinance * saldo4, 2)))
                                 time.sleep(0.8)
@@ -6214,8 +6129,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -6224,16 +6138,12 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2 = taxa * 10
                                 taxaPaxg = random.choice(
-                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845,
-                                     0.000451243811,
-                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272,
-                                     0.007470163288])
+                                    [0.00098869808, 0.000860438248, 0.000332286556, 0.000229802845, 0.000451243811,
+                                     0.000223358254, 0.001666435356, 0.00192716402, 0.005312830272, 0.007470163288])
 
                                 taxaPaxg2 = random.choice(
-                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641,
-                                     0.026274362743,
-                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062,
-                                     0.037388547043])
+                                    [0.014144054453, 0.017594981639, 0.019175284100, 0.025124769641, 0.026274362743,
+                                     0.021119023841, 0.022372391771, 0.039284750228, 0.030672705062, 0.037388547043])
                                 print('')
                                 if destino == 5 or destino == 6:
                                     print(
@@ -6241,8 +6151,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8,
                                                                                la2, la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -6284,21 +6194,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -6320,21 +6222,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -6434,40 +6328,34 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                 else:
                                     print(
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8,
                                                                                la2, la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -6509,21 +6397,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -6545,21 +6425,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -6659,40 +6531,48 @@ while laco2 == True:
                                             if destino == 1:
                                                 print(
                                                     'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                                             if destino == 2:
                                                 print(
                                                     'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                                             if destino == 3:
                                                 print(
                                                     'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                                             if destino == 4:
                                                 print(
                                                     'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                                             if destino == 5:
                                                 print(
                                                     'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                                             if destino == 6:
                                                 print(
                                                     'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                        saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                        na8, la2, la3))
+                                                        saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2,
+                                                        la3))
                             else:
                                 print('Processo Finalizado')
 
                         if ncarteira == 5:
+                            saldo5 = round(saldo5, 5)
                             print(
                                 'Criptomoeda: Theter (USDT), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%'.format(
                                     saldo5, al5))
+                            print('')
+                            print('')
+                            if totalPAXG5 != 0:
+                                print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(totalPAXG5))
+                            print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -6763,8 +6643,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -6790,8 +6669,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -6803,8 +6681,7 @@ while laco2 == True:
                                 print('Carteira I1                      Tipo: Intermediaria')
                                 print('')
                                 time.sleep(0.5)
-                                print('Criptomoeda: Theter (USDT)       Quantidade: {}    AL: {}% '.format(
-                                    saldo5, al5))
+                                print('Criptomoeda: Theter (USDT)       Quantidade: {}    AL: {}% '.format(saldo5, al5))
                                 print('                                           R${}'.format(
                                     round(cotacaoUSDTbinance * saldo5, 1)))
                                 time.sleep(0.8)
@@ -6822,8 +6699,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -6832,13 +6708,11 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2 = taxa * 10
                                 taxaUsdt = random.choice(
-                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988,
-                                     1.39284, 8.85470,
+                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988, 1.39284, 8.85470,
                                      13.39448])
 
                                 taxaUsdt2 = random.choice(
-                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639,
-                                     27.45124,
+                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639, 27.45124,
                                      49.73885,
                                      67.16942])
                                 print('')
@@ -6848,8 +6722,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -6875,21 +6749,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -6911,21 +6777,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -6935,8 +6793,7 @@ while laco2 == True:
                                             al3 = round((100 * real3) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 4:
                                             saldo4 = saldo4 + valor - taxaUsdt2
@@ -6944,8 +6801,7 @@ while laco2 == True:
                                             al4 = round((100 * real4) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 5:
                                             saldo5 = saldo5 + valor - taxaUsdt
@@ -7052,33 +6908,27 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
 
                                 else:
 
@@ -7086,8 +6936,8 @@ while laco2 == True:
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -7113,21 +6963,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -7149,21 +6991,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -7173,8 +7007,7 @@ while laco2 == True:
                                             al3 = round((100 * real3) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 4:
                                             saldo4 = saldo4 + valor - taxaUsdt
@@ -7182,8 +7015,7 @@ while laco2 == True:
                                             al4 = round((100 * real4) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 5:
                                             saldo5 = saldo5 + valor - taxaUsdt
@@ -7290,40 +7122,42 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                             else:
                                 print('Processo Finalizado')
 
                         if ncarteira == 6:
+                            saldo6 = round(saldo6, 5)
                             print(
                                 'Criptomoeda: Theter (USDT), Quantidade: {}, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%'.format(
                                     saldo6, al6))
+                            print('')
+                            print('')
+                            if totalPAXG5 != 0:
+                                print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(totalPAXG5))
+                            print('')
+                            print('')
+                            time.sleep(2)
                             desejaConsultar = leiaCriptografia("Deseja consultar as cotações?")
                             if desejaConsultar == 'não'.upper().lower() or desejaConsultar == 'nao'.upper().lower():
                                 print('')
@@ -7394,8 +7228,7 @@ while laco2 == True:
                                 print(precoUSDT.text)
                                 print("R$", cotacaoUSDTbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapUSDT.text, '     ', fullydilutedmarketcapUSDT.text, '     ',
                                       volume24hUSDT.text)
                                 print("")
@@ -7421,8 +7254,7 @@ while laco2 == True:
                                 print('Preço de PAX Gold (PAXG)')
                                 print("R$", cotacaoPAXGbinance)
                                 print("")
-                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ',
-                                      "Volume 24h")
+                                print("Market Cap", '         ', "Fully Diluted Market Cap", '     ', "Volume 24h")
                                 print(marketcapPAXG.text, '             ', fullydilutedmarketcapPAXG.text,
                                       '           ',
                                       volume24hPAXG.text)
@@ -7434,9 +7266,7 @@ while laco2 == True:
                                 print('Carteira FTX                      Tipo: Corretora')
                                 time.sleep(0.5)
                                 print('')
-                                print(
-                                    'Criptomoeda: Theter (USDT)   Quantidade: {}    AL: {}% '.format(saldo6,
-                                                                                                     al6))
+                                print('Criptomoeda: Theter (USDT)   Quantidade: {}    AL: {}% '.format(saldo6, al6))
                                 print('                                       R${}'.format(
                                     round(cotacaoUSDTbinance * saldo6, 1)))
                                 time.sleep(0.8)
@@ -7456,8 +7286,7 @@ while laco2 == True:
                                 print('')
                                 valor = float(input('Quantifique a tranferencia: '))
                                 print('')
-                                destino = leiaNcarteira(
-                                    'Qual a carteira de destino? (digite o número da carteira): ')
+                                destino = leiaNcarteira('Qual a carteira de destino? (digite o número da carteira): ')
                                 time.sleep(1.4)
                                 # taxa = random.choice(
                                 # 	[0.001562, 0.002604, 0.002322, 0.002298, 0.002512, 0.002233, 0.001666, 0.001732, 0.001878,
@@ -7466,13 +7295,11 @@ while laco2 == True:
                                 # 	 0.001856])
                                 # taxa2 = taxa * 10
                                 taxaUsdt = random.choice(
-                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988,
-                                     1.39284, 8.85470,
+                                    [1.77289, 3.86556, 4.29802, 11.11901, 7.01632, 9.144054, 6.00988, 1.39284, 8.85470,
                                      13.39448])
 
                                 taxaUsdt2 = random.choice(
-                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639,
-                                     27.45124,
+                                    [25.41013, 36.41005, 63.033228, 32.902384, 40.40544, 55.07471, 61.91639, 27.45124,
                                      49.73885,
                                      67.16942])
                                 print('')
@@ -7482,8 +7309,8 @@ while laco2 == True:
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
                                         Conversão será feita automaticamente via protocolo crosschain (1 INCH NETWORK).
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -7510,21 +7337,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -7546,21 +7365,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -7570,8 +7381,7 @@ while laco2 == True:
                                             al3 = round((100 * real3) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 4:
                                             saldo4 = saldo4 + valor - taxaUsdt
@@ -7579,8 +7389,7 @@ while laco2 == True:
                                             al4 = round((100 * real4) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 5:
                                             saldo5 = saldo5 + valor - taxaUsdt
@@ -7688,40 +7497,34 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                 else:
                                     print(
                                         '''
                                         ERC-20 Transaction: Tax pending.
                                         Aviso: Taxa de gás inclui crosschain dinâmico proporcional ao gás.
-                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5,
-                                                                               na6, na7, na8, la2,
+                                        ID: {}{}{}{}{}{}{}{}{}-{}{} '''.format(na1, na2, na3, la1, na4, na5, na6, na7,
+                                                                               na8, la2,
                                                                                la3))
                                     time.sleep(3)
                                     confirmar = leiaCriptografia('''
@@ -7747,21 +7550,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont = cont + 1
@@ -7783,21 +7578,13 @@ while laco2 == True:
 
                                                     a = (x1 + x2 + x3 + x4 + x5 + x6 + x7)
 
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
-                                                    print(
-                                                        'Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                        a)
+                                                    print('Confirmação de rede pendende (0/3):  PROTOCOLO -', a)
                                                     time.sleep(1.5)
 
                                                     cont1 = cont1 + 1
@@ -7807,8 +7594,7 @@ while laco2 == True:
                                             al3 = round((100 * real3) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 4:
                                             saldo4 = saldo4 + valor - taxaUsdt
@@ -7816,8 +7602,7 @@ while laco2 == True:
                                             al4 = round((100 * real4) / total, 3)
                                             for c in range(1, 60):
                                                 print('Confirmação de rede pendende (0/3):  PROTOCOLO -',
-                                                      ''.join(random.SystemRandom().choices(
-                                                          string.ascii_letters, k=7)))
+                                                      ''.join(random.SystemRandom().choices(string.ascii_letters, k=7)))
                                                 time.sleep(1.5)
                                         if destino == 5:
                                             saldo5 = saldo5 + valor - taxaUsdt
@@ -7925,33 +7710,27 @@ while laco2 == True:
                                         if destino == 1:
                                             print(
                                                 'O saldo da carteira R1 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo1, al1, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 2:
                                             print(
                                                 'O saldo da carteira R2 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo2, al2, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 3:
                                             print(
                                                 'O saldo da carteira R3 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo3, al3, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 4:
                                             print(
                                                 'O saldo da carteira R4 é {} em PAXG, Status: Chaves ativas sob gerenciamento, Tipo: Reserva, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo4, al4, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 5:
                                             print(
                                                 'O saldo da carteira I1 é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Intermediaria, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo5, al5, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                                         if destino == 6:
                                             print(
                                                 'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
-                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7,
-                                                    na8, la2, la3))
+                                                    saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
                             else:
                                 print('Processo Finalizado')
 
@@ -8132,14 +7911,17 @@ while laco2 == True:
             print("Bem vindo a decentralized exchange")
             time.sleep(2)
             print("")
+            print("")
             while laco3 == True:
                 ncarteiraDex = leiaNcarteira('Digite a carteira que deseja: ')
+                print("")
                 print("")
                 if ncarteiraDex == 1:
                     print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo1))
                     time.sleep(1)
                     print("")
                     valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    print("")
                     print("")
                     if valorDex > saldo1 or valorDex <= 0:
                         print('Erro, digite um valor válido')
@@ -8155,11 +7937,152 @@ while laco2 == True:
                         if confirmar2 == 'sim':
                             valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance
                             valorPAXGUSDT = round(valorPAXGUSDT, 5)
-                            saldo1 = saldo1 - (valorDex * cotacaoPAXGbinance)
-                            totalUSDT = valorPAXGUSDT
+                            saldo1 = saldo1 - valorDex
+                            totalUSDT1 = valorPAXGUSDT
                             time.sleep(2)
                             print('')
-                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalUSDT))
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalUSDT1))
+                        if confirmar2 == 'não' or confirmar2 == 'nao':
+                            print('')
+                if ncarteiraDex == 2:
+                    print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo2))
+                    time.sleep(1)
+                    print("")
+                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    print("")
+                    print("")
+                    if valorDex > saldo2 or valorDex <= 0:
+                        print('Erro, digite um valor válido')
+                        print('')
+                    else:
+                        laco3 = False
+                        valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance #valor total para swap em dolar
+                        valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                        cotacaoPAXGbinance = round(cotacaoPAXGbinance, 2)
+                        print('O valor de PAXG convertido em USDT será: ${}'.format(valorPAXGUSDT))
+                        print('')
+                        confirmar2 = str(input('Digite sim para confirmar a transferencia: '))
+                        if confirmar2 == 'sim':
+                            valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance
+                            valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                            saldo2 = saldo2 - valorDex
+                            totalUSDT2 = valorPAXGUSDT
+                            time.sleep(2)
+                            print('')
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalUSDT2))
+                        if confirmar2 == 'não' or confirmar2 == 'nao':
+                            print('')
+                if ncarteiraDex == 3:
+                    print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo3))
+                    time.sleep(1)
+                    print("")
+                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    print("")
+                    print("")
+                    if valorDex > saldo3 or valorDex <= 0:
+                        print('Erro, digite um valor válido')
+                        print('')
+                    else:
+                        laco3 = False
+                        valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance #valor total para swap em dolar
+                        valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                        cotacaoPAXGbinance = round(cotacaoPAXGbinance, 2)
+                        print('O valor de PAXG convertido em USDT será: ${}'.format(valorPAXGUSDT))
+                        print('')
+                        confirmar2 = str(input('Digite sim para confirmar a transferencia: '))
+                        if confirmar2 == 'sim':
+                            valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance
+                            valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                            saldo3 = saldo3 - valorDex
+                            totalUSDT3 = valorPAXGUSDT
+                            time.sleep(2)
+                            print('')
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalUSDT3))
+                        if confirmar2 == 'não' or confirmar2 == 'nao':
+                            print('')
+
+                if ncarteiraDex == 4:
+                    print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo4))
+                    time.sleep(1)
+                    print("")
+                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    print("")
+                    print("")
+                    if valorDex > saldo4 or valorDex <= 0:
+                        print('Erro, digite um valor válido')
+                        print('')
+                    else:
+                        laco3 = False
+                        valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance #valor total para swap em dolar
+                        valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                        cotacaoPAXGbinance = round(cotacaoPAXGbinance, 2)
+                        print('O valor de PAXG convertido em USDT será: ${}'.format(valorPAXGUSDT))
+                        print('')
+                        confirmar2 = str(input('Digite sim para confirmar a transferencia: '))
+                        if confirmar2 == 'sim':
+                            valorPAXGUSDT = (valorDex * cotacaoPAXGbinance) / cotacaoUSDTbinance
+                            valorPAXGUSDT = round(valorPAXGUSDT, 5)
+                            saldo4 = saldo4 - valorDex
+                            totalUSDT4 = valorPAXGUSDT
+                            time.sleep(2)
+                            print('')
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalUSDT4))
+                        if confirmar2 == 'não' or confirmar2 == 'nao':
+                            print('')
+                if ncarteiraDex == 5:
+                    print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(saldo5))
+                    time.sleep(1)
+                    print("")
+                    valorDex = int(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
+                    print("")
+                    print("")
+                    if valorDex > saldo5 or valorDex <= 0:
+                        print('Erro, digite um valor válido')
+                        print('')
+                    else:
+                        laco3 = False
+                        valorUSDTPAXG = (valorDex * cotacaoUSDTbinance) / cotacaoPAXGbinance #valor total para swap em PAXG
+                        valorUSDTPAXG = round(valorUSDTPAXG, 5)
+                        cotacaoPAXGbinance = round(cotacaoPAXGbinance, 2)
+                        print('O valor de USDT convertido em PAXG será: {}'.format(valorUSDTPAXG))
+                        print('')
+                        confirmar2 = str(input('Digite sim para confirmar a transferencia: '))
+                        if confirmar2 == 'sim':
+                            valorUSDTPAXG = (valorDex * cotacaoUSDTbinance) / cotacaoPAXGbinance
+                            valorUSDTPAXG = round(valorUSDTPAXG, 5)
+                            saldo5 = saldo5 - valorDex
+                            totalPAXG5 = valorUSDTPAXG
+                            time.sleep(2)
+                            print('')
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalPAXG5))
+                        if confirmar2 == 'não' or confirmar2 == 'nao':
+                            print('')
+                if ncarteiraDex == 6:
+                    print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(saldo6))
+                    time.sleep(1)
+                    print("")
+                    valorDex = int(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
+                    print("")
+                    print("")
+                    if valorDex > saldo6 or valorDex <= 0:
+                        print('Erro, digite um valor válido')
+                        print('')
+                    else:
+                        laco3 = False
+                        valorUSDTPAXG = (valorDex * cotacaoUSDTbinance) / cotacaoPAXGbinance #valor total para swap em PAXG
+                        valorUSDTPAXG = round(valorUSDTPAXG, 5)
+                        cotacaoPAXGbinance = round(cotacaoPAXGbinance, 2)
+                        print('O valor de USDT convertido em PAXG será: {}'.format(valorUSDTPAXG))
+                        print('')
+                        confirmar2 = str(input('Digite sim para confirmar a transferencia: '))
+                        if confirmar2 == 'sim':
+                            valorUSDTPAXG = (valorDex * cotacaoUSDTbinance) / cotacaoPAXGbinance
+                            valorUSDTPAXG = round(valorUSDTPAXG, 5)
+                            saldo6 = saldo6 - valorDex
+                            totalPAXG6 = valorUSDTPAXG
+                            time.sleep(2)
+                            print('')
+                            print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalPAXG6))
                         if confirmar2 == 'não' or confirmar2 == 'nao':
                             print('')
 
