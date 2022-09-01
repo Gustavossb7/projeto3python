@@ -7920,7 +7920,7 @@ while laco2 == True:
                     print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo1))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    valorDex = float(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
                     print("")
                     print("")
                     if valorDex > saldo1 or valorDex <= 0:
@@ -7948,7 +7948,7 @@ while laco2 == True:
                     print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo2))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    valorDex = float(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
                     print("")
                     print("")
                     if valorDex > saldo2 or valorDex <= 0:
@@ -7976,7 +7976,7 @@ while laco2 == True:
                     print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo3))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    valorDex = float(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
                     print("")
                     print("")
                     if valorDex > saldo3 or valorDex <= 0:
@@ -8005,7 +8005,7 @@ while laco2 == True:
                     print('Criptomoeda: Paxos Gold (PAXG), Quantidade: {}'.format(saldo4))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
+                    valorDex = float(input("Qual o valor em PAXG que deseja fazer o SWAP para USDT: "))
                     print("")
                     print("")
                     if valorDex > saldo4 or valorDex <= 0:
@@ -8033,7 +8033,7 @@ while laco2 == True:
                     print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(saldo5))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
+                    valorDex = float(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
                     print("")
                     print("")
                     if valorDex > saldo5 or valorDex <= 0:
@@ -8061,7 +8061,7 @@ while laco2 == True:
                     print('Criptomoeda: Theter (USDT), Quantidade: {}'.format(saldo6))
                     time.sleep(1)
                     print("")
-                    valorDex = int(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
+                    valorDex = float(input("Qual o valor em USDT que deseja fazer o SWAP para PAXG: "))
                     print("")
                     print("")
                     if valorDex > saldo6 or valorDex <= 0:
@@ -8085,7 +8085,6 @@ while laco2 == True:
                             print('Swap de {} PAXG em {} USDT, concluido com sucesso'.format(valorDex, totalPAXG6))
                         if confirmar2 == 'não' or confirmar2 == 'nao':
                             print('')
-
 
         # Log out
         if opcao == 6:
