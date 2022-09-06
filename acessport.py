@@ -200,6 +200,12 @@ totalUSDT3 = 0
 totalUSDT4 = 0
 totalPAXG5 = 0
 totalPAXG6 = 0
+al1 = 0
+al2 = 0
+al3 = 0
+al4 = 0
+al5 = 0
+al6 = 0
 
 laco = True
 laco1 = True
@@ -239,12 +245,12 @@ print('')
 print('Bem vindo Matheus')
 print('')
 
-saldo1 = float(314.51265865185)  # paxg
-saldo2 = float(331.79469940991)  # paxg
-saldo3 = float(369.67412551236)  # paxg
-saldo4 = float(366.35878201318)  # paxg
-saldo5 = float(546_228.49662)  # USDT
-saldo6 = float(484_625.37828)  # USDT
+saldo1 = float(317.81265865185)  # paxg
+saldo2 = float(334.99469940991)  # paxg
+saldo3 = float(372.97412551236)  # paxg
+saldo4 = float(369.65878201318)  # paxg
+saldo5 = float(551_953.49662)  # USDT
+saldo6 = float(490_350.37828)  # USDT
 
 while laco2 == True:
         print('')
@@ -392,7 +398,7 @@ while laco2 == True:
                 time.sleep(1.4)
                 print('')
 
-                total = float(17_152_726.82)
+                total = float(17_337_026.02)
 
                 simbolo = moeda + base
 
@@ -444,11 +450,12 @@ while laco2 == True:
                 ID5 = (na1, na2, na3, la1, na4, na5, na6, na7, na8, "-", la2, la3)
                 ID6 = (na1, na2, na3, la1, na4, na5, na6, na7, na8, "-", la2, la3)
 
-                ta1 = random.choice([11, 12, 13, 14, 15])
+                ta1 = random.choice([6, 7, 8, 9, 10])
 
-                ta2 = random.choice([11, 12, 13, 14, 15])
+                ta2 = random.choice([6, 7, 8, 9, 10])
 
-                ta3 = 40 - (ta1 + ta2)
+                ta3 = 30 - (ta1 + ta2)
+
 
                 al1 = round((100 * real1) / total, 3)
                 al2 = round((100 * real2) / total, 3)
@@ -456,6 +463,7 @@ while laco2 == True:
                 al4 = round((100 * real4) / total, 3)
                 al5 = round((100 * real5) / total, 3)
                 al6 = round((100 * real6) / total, 3)
+
 
                 if ncarteira == 1:
                     #saldo1 = round(saldo1, 3)
@@ -1004,15 +1012,6 @@ while laco2 == True:
                                     time.sleep(1.5)
                                     cont5 = cont5 + 1
 
-                                print('Confirmação de rede pendende (3/3):  PROTOCOLO -', a)
-                                time.sleep(1.5)
-                                print('Confirmação de rede pendende (3/3):  PROTOCOLO -', a)
-                                time.sleep(1.5)
-                                print('Confirmação de rede pendende (3/3):  PROTOCOLO -', a)
-                                time.sleep(1.5)
-                                print('Confirmação de rede pendende (3/3):  PROTOCOLO -', a)
-                                time.sleep(1.5)
-                                cont5 = cont5 + 1
 
                                 if destino == 1:
                                     print(
@@ -1038,7 +1037,6 @@ while laco2 == True:
                                     print(
                                         'O saldo da carteira FTX é {} em USDT, Status: Chaves ativas sob gerenciamento, Tipo: Corretora, AL: {}%, ID: {}{}{}{}{}{}{}{}{}-{}{}'.format(
                                             saldo6, al6, na1, na2, na3, la1, na4, na5, na6, na7, na8, la2, la3))
-
 
                     else:
                         print('Processo Finalizado')
@@ -7735,8 +7733,21 @@ while laco2 == True:
                                 print('Processo Finalizado')
 
                 if ncarteira == 8:
+                    simbolo = moeda3 + base
+
+                    url = f"https://api.binance.com/api/v3/ticker/price?symbol={simbolo}"
+
+                    requisicao = requests.get(url)
+                    resposta = requisicao.json()
+
+                    cotacaoEthbinance = resposta["price"]
+                    cotacaoEthbinance = float(cotacaoEthbinance)
+
+                    totalETH = 11_625_826.97
+                    QuantatidadeETH = totalETH / cotacaoEthbinance
+                    QuantatidadeETH = round(QuantatidadeETH, 11)
                     print(
-                        'Criptomoeda: Ethereum (ETH), Quantidade: 1.969,56 , Status: Chaves ativas sob gerenciamento')
+                        'Criptomoeda: Ethereum (ETH), Quantidade: {} , Status: Chaves ativas sob gerenciamento'.format(QuantatidadeETH))
                     print('')
                     print('')
                     print('')
@@ -7766,6 +7777,10 @@ while laco2 == True:
                         cotacaoEthbinance = resposta["price"]
                         cotacaoEthbinance = float(cotacaoEthbinance)
 
+
+                        totalETH = 11_625_826.97
+                        QuantatidadeETH=totalETH/cotacaoEthbinance
+                        QuantatidadeETH = round(QuantatidadeETH, 11)
 
 
                         # até aqui
@@ -7814,8 +7829,8 @@ while laco2 == True:
                         print('Carteira M        ')
                         time.sleep(0.5)
                         print('')
-                        print('Criptomoeda: Ethereum (ETH), Quantidade: 1.969,56')
-                        print('                                         R$14.916.826,96')
+                        print('Criptomoeda: Ethereum (ETH), Quantidade: {}'.format(QuantatidadeETH))
+                        print('                                         R$11.625.826,97')
                         time.sleep(0.8)
                         print('')
                         print('Status: Chaves ativas sob gerenciamento')
